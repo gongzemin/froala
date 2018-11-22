@@ -1,0 +1,65 @@
+<div class="container">
+	<div class="col-sm-10 col-sm-offset-1 col-xs-12">
+		<% @articles.each do |article| %>
+		  <div class="col-xs-12 text-center">
+		  	<div class="text-center">
+		  		<h2><%= article.title %></h2>
+		  		<h6><%= article.created_at.strftime(' %b %d, %Y') %></h6>
+		  	</div>
+		  	<div>
+		  		<%= article.body.truncate(36).html_safe %>
+		  	</div>
+		  	<div class="text-center">
+		  		<%= link_to "READ MORE", article_path(article) %>
+		  	</div>
+
+            <!-- This block is available to only signed in users -->
+             <% if signed_in? %>
+                   <%= link_to "Show", article_path(article), class: 'btn btn-primary' %>
+                   <%= link_to "Edit", edit_article_path(article), class: 'btn btn-default' %>
+                   <%= link_to "Delete", article_path(article), class: 'btn btn-danger', data: {:confirm => 
+                   	"Are you sure?"}, method: :delete %>
+            <% end %>
+            <hr>
+           </div>
+        <% end %>
+    </div>
+</div>
+
+<%= link_to 'About', page_path('about') %>
+<%= link_to 'Home', page_path('home') %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+<div class="col-sm-11 col-xs-12">
+	<h2 class="text-center"><%= @article.title %></h2>
+	<h5 class="text-center"><%= @article.created_at.strftime('%b %d, %Y') %></h5>
+	<div class="fr-view"><%= raw @article.body %></div>
+</div> 
