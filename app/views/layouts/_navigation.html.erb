@@ -24,9 +24,18 @@
 
           
             <% if current_user %>
-              <li class="nav-item">
-               <%= link_to '退出',  destroy_user_session_path, method: :delete %>
+               <li class="nav-item dropdown">
+                
+                <%= link_to '账户', edit_user_registration_path, class: "nav-link dropdown-toggle", id: "navbarDropdownMenuLink", data: {toggle: "dropdown"} %>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  
+                  
+                  
+                  
+                  <%= link_to '退出',  destroy_user_session_path, method: :delete,  class: 'dropdown-item' %>
+                </div>
               </li>
+
             <% else %>
               <li class="nav-item">
                <%= link_to '登录', new_user_session_path, class: 'nav-link' %>
@@ -36,17 +45,6 @@
               </li>
             <% end %>
             
-         
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown link
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
         </ul>
     </div>
   </div>
