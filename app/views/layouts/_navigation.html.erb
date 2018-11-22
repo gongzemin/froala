@@ -29,7 +29,7 @@
                 <%= link_to '账户', edit_user_registration_path, class: "nav-link dropdown-toggle", id: "navbarDropdownMenuLink", data: {toggle: "dropdown"} %>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   
-                    <%= current_user.name %> 
+                    <%= current_user.email.split('@')[0].capitalize %> 
                   
                   
                   <%= link_to '退出',  destroy_user_session_path, method: :delete,  class: 'dropdown-item' %>
