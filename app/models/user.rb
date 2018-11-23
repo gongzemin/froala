@@ -6,4 +6,5 @@ class User < ApplicationRecord
          :trackable, :omniauthable
 
   has_many :articles, dependent: :destroy
+  has_one_attached :avatar
 end
