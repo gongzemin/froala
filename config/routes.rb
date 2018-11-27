@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # Root path should be after channel constraints
   #root to: 'projects#index'
   resources :articles
+  resources :users, only: [:show, :edit, :update]
   resources :charges
   get 'pages/ho' => 'high_voltage/pages#show', id: 'home'
 end

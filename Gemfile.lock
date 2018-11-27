@@ -97,6 +97,7 @@ GEM
       sassc (>= 1.11)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    gravatar_image_tag (1.2.0)
     hashie (3.5.7)
     high_voltage (3.1.0)
     i18n (1.1.1)
@@ -122,6 +123,7 @@ GEM
       mimemagic (~> 0.3.2)
     method_source (0.9.1)
     mimemagic (0.3.2)
+    mini_magick (4.9.2)
     mini_mime (1.0.1)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
@@ -250,10 +252,12 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise
   font-awesome-sass
+  gravatar_image_tag
   high_voltage (~> 3.1)
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
+  mini_magick (~> 4.8)
   omniauth
   puma (~> 3.11)
   rails (~> 5.2.1)

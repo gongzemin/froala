@@ -1,18 +1,18 @@
 class ArticlesController < ApplicationController
-	before_action :find_article, only: [:edit, :update, :show, :delete]
-	before_action :require_login, except: [:index, :show]
+	before_action :set_article, only: [:show, :edit, :update, :destroy]
+	# before_action :require_login, except: [:index, :show]
 
 	def index 
-		@articles = Article.all
+		@articles = current_user.articles
 	end
 
 	def new 
-		@article = Article.new
+		@article = current_user.articles.build
 	end
 
 	def create
-		@article = Article.new(article_params)
-		@article.user = current_user
+		@article = current_user.articles.build(article_params)
+	
 		if @article.save
 			flash[:notice] = "Successfully created article!"
 			redirect_to article_path(@article)
@@ -53,7 +53,7 @@ class ArticlesController < ApplicationController
 		params.require(:article).permit(:title, :body)
 	end
 
-	def find_article
+	def set_article
 		@article = Article.find(params[:id])
 	end
 end

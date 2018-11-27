@@ -25,15 +25,21 @@
           
             <% if current_user %>
                <li class="nav-item dropdown">
-                
-                <%= link_to '账户', edit_user_registration_path, class: "nav-link dropdown-toggle", id: "navbarDropdownMenuLink", data: {toggle: "dropdown"} %>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+               
+                 
+                <%= link_to root_path, class: "nav-link dropdown-toggle", id: "navbarDropdownMenuLink", data: {toggle: "dropdown"} do %>
+                   <%= image_tag user_avatar(current_user, 30), class: "rounded-circle" %>
+                <% end %>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   
-                    <%= current_user.email.split('@')[0].capitalize %> 
+                  <li><%= link_to "编辑个人资料", edit_user_registration_path %></li>
                   
-                  
-                  <%= link_to '退出',  destroy_user_session_path, method: :delete,  class: 'dropdown-item' %>
-                </div>
+                  <li><%= link_to "我的项目", articles_path %></li>
+                  <li><%= link_to "新建项目", new_article_path %></li>
+                  <li role="separator" class="divider"></li>
+                  <li><%= link_to '退出',  destroy_user_session_path, method: :delete,  class: 'dropdown-item' %></li>
+                </ul>
               </li>
 
             <% else %>

@@ -1,3 +1,6 @@
+<div><h3>我的项目</h3></div>
+<br />
+
 <div class="container">
 	<div class="col-sm-10 col-sm-offset-1 col-xs-12">
 		<% @articles.each do |article| %>
@@ -28,6 +31,15 @@
 
 <%= link_to 'About', page_path('about') %>
 <%= link_to 'Home', page_path('home') %>
+
+
+
+<div class="row">
+    <div class="col-md-3 col-sm-12">
+        <a href="http://localhost:3000/search?utf8=%E2%9C%93&search=los+angeles">
+            <div class="discovery-card" style="background-image: url('assets/LA.jpg')"></div>
+        </a>
+    </div>
 
 
 
