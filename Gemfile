@@ -40,7 +40,6 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'bootstrap'
 gem 'jquery-rails'
-gem 'simple_form'
 gem 'wysiwyg-rails'
 gem "font-awesome-sass"
 gem 'high_voltage', '~> 3.1'
@@ -49,6 +48,7 @@ gem 'devise'
 gem 'simple_form'
 gem 'omniauth'
 gem 'gravatar_image_tag'
+gem 'webpacker', '~> 3.5'
 
 
 
