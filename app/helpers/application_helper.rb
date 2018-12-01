@@ -1,4 +1,4 @@
-module ApplicationHelper
+ module ApplicationHelper
 	
 
 	def user_avatar(user, size=40)

@@ -1,5 +1,108 @@
-<div class="col-sm-11 col-xs-12">
-	<h2 class="text-center"><%= @article.title %></h2>
-	<h5 class="text-center"><%= @article.created_at.strftime('%b %d, %Y') %></h5>
-	<div class="fr-view"><%= raw @article.body %></div>
-</div> 
+<div class="">
+  <div class="bg-grey-100-min grid-container-min mb-50-min">
+	<div class="row pt-60-min  mb-50-min">
+	    <div class="col-md-3">
+
+	    	<div><%= image_tag user_avatar(@article.user, 38), class: 'rounded-circle' %></div>
+	    	<div class="mt-10-min">By <%= link_to @article.user.username %></div>
+	    	<p class="font-size-13-min">发起了 <%= pluralize(@article.user.articles.count, 'project') %></p>
+	    </div>
+	    <div class="col-md-9 width-600-min">
+	    	<h2><%= @article.title %></h2>
+	     	<p><%= @article.subtitle %></p>
+	    </div>
+	</div>
+
+	
+	
+    <% if @article.project_cover.attached? %>
+	<div class="pb-50-min"><%= image_tag @article.project_cover.variant(resize: '756X425.25') %></div>
+    <% end %>
+  </div>
+
+
+
+   <div class="grid-container-min pt-30-min">
+
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">项目描述</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><%= pluralize(@article.comments.count, 'Comment') %></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">FAQ</a>
+        </li>
+      </ul>
+      
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+         <div class="row">
+        	<div class="col-md-8 fr-view">
+        			<%= raw @article.body %>
+        	</div>
+        	<div class="col-md-4">
+        			<p>你到底为什么这么傻</p>
+        	</div>
+         </div>
+        </div>
+
+        	
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+          <div class="row">
+            <div class="col-md-8">
+        		<%= render @article.comments %>
+        	
+        		<% if user_signed_in? %>
+								<div class="">
+									<h5 class="">Leave a reply</h5>
+									<%= render 'comments/form' %>
+								</div>
+							<% else %>
+								<div class=""><%= link_to 'Sign in', new_user_session_path %> to leave a comment.</div>
+							<% end %>
+        	</div>
+        	<div class="col-md-4">
+        			<p>为创造者打call! 与创客一起互动</p>
+        	</div>
+          </div>
+       </div>
+           	
+
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">FAQ</div>
+      </div>
+
+
+
+		<div class="fr-view"><%#= raw @article.body %></div>
+		 <!-- This block is available to only signed in users -->
+	     <% if signed_in? %>
+
+	                   <%= link_to "Edit", edit_article_path(@article), class: 'btn btn-default' %>
+	                   <%= link_to "Delete", article_path(@article), class: 'btn btn-danger', data: {:confirm => 
+	                   	"Are you sure?"}, method: :delete %>
+	     <% end %>
+	     <hr>
+
+
+	    <h5><%= @article.created_at.strftime('%b %d, %Y') %></h5>
+
+	    
+	
+
+      
+
+
+      
+     
+
+
+   </div>
+</div>
+
+
+
+
+

@@ -16,6 +16,23 @@
    	 <%= f.input :title, class: "form-control" %>
    </div>
 
+   <div class="from-group">
+     <%= f.input :subtitle, class: "form-control" %>
+   </div>
+
+   <div class="from-group">
+     <%= f.input :goal, class: "form-control" %>
+   </div>
+
+
+   <div class="from-group">
+     <%= f.input :project_cover, as: :file, class: "form-control" %>
+   </div>
+
+    <div class="from-group">
+     <%= f.input :project_video, as: :file, class: "form-control" %>
+   </div>
+
    <div class="form-group">
    	 <%= f.label :body %>
    	 <%= f.text_area :body, id: 'wysiwyg' %>

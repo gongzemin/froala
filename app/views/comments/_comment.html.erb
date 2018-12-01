@@ -1,0 +1,24 @@
+<div class="commentContainer_min bg-grey-100 row">
+
+    <div class="card col-md-8 commentwrapper-min">
+          
+          <div class="flex-center-min mb-20-min">
+            <div><%= image_tag  user_avatar(comment.user, 38), class: "rounded-circle mr-10-min" %></div>
+            <div class="flex-column-center-min">
+              <div class="mt-10-min"><%= comment.user.username %></div>
+              <div class="type-12-min"><%= distance_of_time_in_words(comment.created_at, Time.now) %>前</div>
+            </div>
+          </div>
+          <div><%= comment.content %></div>
+    </div>
+    <% if (user_signed_in? && (current_user.id == comment.user_id)) %>
+       <%= link_to 'Delete', [comment.article, comment],
+                  method: :delete, class: "button is-danger", data: { confirm: 'Are you sure?' } %>
+    <% end %>
+ 
+</div>
+
+
+
+
+

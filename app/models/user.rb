@@ -6,9 +6,8 @@ class User < ApplicationRecord
          :trackable, :omniauthable
 
   has_many :articles, dependent: :destroy
+  has_many :comments, dependent: :destroy
   has_one_attached :avatar
 
-  def username
-  	self.email.split('@')[0]
-  end
+  
 end

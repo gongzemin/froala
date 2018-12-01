@@ -1,0 +1,46 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ .section-min {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0px auto;
+}
+
+.flex-column-center-min {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.flex-center-min {
+	display: flex;
+	align-items: center;
+}
+
+
+
+.commentwrapper-min{
+	padding: 10px 20px;
+}
+
+.col-md-3.card {
+	padding-left: 0;
+	padding-right: 0;
+	margin:10px 10px;
+	max-width: 234px;
+}
+
+.project-card-content {
+	padding: 10px;
+}
+
+.card h3 {
+  color: teal;
+}
+
+.project-blurb {
+	font-size: 12px;
+}
+

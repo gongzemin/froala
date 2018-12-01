@@ -1,9 +1,12 @@
 class ArticlesController < ApplicationController
 	before_action :set_article, only: [:show, :edit, :update, :destroy]
+
+	before_action :authenticate_user!, except: [:index, :show]
 	# before_action :require_login, except: [:index, :show]
 
 	def index 
-		@articles = current_user.articles
+		@user = current_user
+		@articles = @user.articles.all.order('created_at DESC')
 	end
 
 	def new 
@@ -36,6 +39,7 @@ class ArticlesController < ApplicationController
 	end
 
 	def show
+	   
 	end
 
 	def destroy
@@ -50,7 +54,7 @@ class ArticlesController < ApplicationController
 	private
 
 	def article_params
-		params.require(:article).permit(:title, :body)
+		params.require(:article).permit(:title, :body, :goal, :subtitle, :project_cover, :project_video)
 	end
 
 	def set_article

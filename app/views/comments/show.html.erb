@@ -1,0 +1,11 @@
+show comment
+<% @article.comments each do |comment| %>
+    <div class="jumbotron">
+    	<p>
+    		<%= comment.content %>
+    		<%= link_to "Edit", edit_article_comment_path(@article, comment) %>
+            
+    	</p>
+    </div>
+
+<% end %>

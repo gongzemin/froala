@@ -10,8 +10,11 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require_tree .
+ *= require_self
  */
  @import "bootstrap";
+ @import "articles";
  
  @import "froala_editor.min";
  @import "froala_style.min";
@@ -43,9 +46,77 @@
 	justify-content: space-between;
 }
 
+.type-12-min {
+	font-size: 12px;
+	line-height: 18px;
+}
 
 
 
+
+.mt-10-min {
+	margin-top: 10px;
+}
+
+
+.mb-20-min {
+	margin-bottom: 20px;
+}
+
+
+
+/*
+.mb-30-min {
+	margin-bottom: 30px;
+}
+*/
+.mb-50-min {
+	margin-bottom: 50px;
+}
+
+.mr-10-min {
+	margin-right: 10px;
+}
+
+.bg-grey-100-min {
+	background-color: #FBFBFA;
+}
+
+.pt-30-min {
+	padding-top: 30px;
+}
+
+/*
+.pt-40-min {
+	padding-top: 40px;
+}
+*/
+.pt-60-min {
+	padding-top: 60px;
+}
+
+.pb-50-min {
+	padding-bottom: 50px;
+}
+
+
+.font-size-13-min {
+	font-size: 13px;
+}
+
+
+.grid-container-min {
+	padding-left: 60px;
+	padding-right: 60px;
+	margin: 0 auto;
+	max-width: 1366px;
+	width: 100%;
+}
+
+.width-600-min {
+    width: 100%; 
+    max-width: 600px;
+}
 
 
 
