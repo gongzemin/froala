@@ -1,0 +1,415 @@
+
+  
+  .footer-am {
+    
+    background-color: #080302;
+    color: white;
+    padding-top: 5vh;
+    padding-bottom: 5vh; 
+    
+  }
+  
+  
+  .fixedwidthcontainer-am {
+    width: 100%; 
+    max-width: 1200px; 
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+  
+  .footer-contact-and {
+    padding-bottom: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #363738;
+    text-transform: capitalize;
+  }
+  
+  /* Social stylesheet */
+  
+  .fa.fa-2x {
+    color: white;
+  }
+  
+  .fa.fa-2x:hover {
+    color: #35a8a6;
+  }
+  .footer-social-and {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .footer-social-and li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+ .footer-emailicon-and {
+   display: inline-block;
+ }
+  
+ .footer-title, .footer-title a {
+    font-size: 16px;
+    line-height: 18px;
+    color: white;
+    display: inline-block;
+    padding: 0 0 0 25px;
+}
+  
+  .footer-secondary-title, .footer-secondary-title a {
+    font-size: 12px;
+    line-height: 14px;
+    color: #D4D4D4;
+    display: block;
+    padding: 0 0 0 25px;
+}
+  
+.email-us-container-and {
+    display: flex;
+}
+ 
+  
+  /* footer menu stylesheet */
+  
+  .footerContainerAnd {          
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   }
+  
+  
+
+ .newsletter-and.xmt-30 {
+   margin-top: 0px;
+ }
+
+  .footerContainerAnd > div {          
+    width: 100%;
+    max-width: 210px;
+   }
+  
+  
+   .xmt-30.firstmenu {
+    padding-left: 0;
+  }
+  
+  .menu-title-and {
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+  }
+
+
+
+
+  
+  .menu-title-and a {
+    color: white;
+    margin-bottom: 5%; 
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  
+  .footer-nav-and {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+  
+  .footerMenu-and > li {
+    margin-bottom: 5%;
+   }
+  
+  
+  ul.footerMenu-and > li a  {
+    color: #919699;
+    display: inline-block;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+  }
+
+   ul.footerMenu-and > li a:hover  {
+    color: white;
+  }
+
+  
+ 
+  
+  
+  /* About us stylesheet */
+  .footer-about-and {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 4%;
+    
+    border-bottom: 1px solid #363738;
+    padding-bottom: 16px;
+  }
+    
+  
+   .footer-about-and .footer-nav-and {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  
+   .footerlogo-am {
+    height: 17px;
+    vertical-align: center;
+  }
+  
+
+   .footer-navright-and {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  
+  ul.footer-navright-and > li:first-child {
+    
+    margin-left: 4%;
+  }
+  
+  
+  .footer-navright-and > li {
+    
+    width: 100%;
+    max-width: 140px;
+  }
+
+  
+  
+  ul.footer-navright-and > li a {
+    
+    color: white;
+    padding-right: 3%;
+    transition: all 0.3s ease;
+
+  }
+  
+  ul.footer-navright-and > li a:hover {
+    
+    text-decoration: underline;
+
+  }
+  
+
+  
+
+  
+  
+  
+  
+ 
+  
+/* newletter stylesheet */
+  
+
+  
+  .newsletter-and {
+    padding-right: 0;
+  }
+  
+  .newsletter-title-and  {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    line-height: 24px;
+    text-align: center;
+  }
+  
+  .mb-30-and {
+    margin-bottom: 30px;
+  }
+  
+  .newsletter-about-and {
+     margin-bottom: 5%;
+     color: #919699;
+    
+  }
+
+
+
+
+.subscribe__btn input.bst__btn {
+    background-image: url(send.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 29% auto;
+    position: relative;
+    text-indent: -999px;
+    z-index: 5;
+}
+
+.subscribe__btn {
+  background-color: #35a8a6;
+}
+
+ /* social icon arrange */
+  
+.footer-bottom-and {
+  margin-top: 7vh;
+  color: #616466;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  
+}
+  
+  
+  .legal-links-and {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 200px;
+    
+  }
+  
+  
+  .legal-links-and li {
+    display: inline-block;  
+    width: 100%;
+    max-width: 120px;
+    text-align: center;
+  }
+  
+   .legal-links-and li:first-child {
+    border-right: 1px solid  #616466;
+  }
+  
+  .legal-links-and li a {
+    color: #616466;
+    transition: all 0.3s ease;
+  }
+  
+  .legal-links-and li a:hover {
+    color: #919699;
+  }
+  
+
+.news__input input {
+  color: white;
+}
+  
+  @media all and (max-width: 767px) {
+   
+    
+     .footerContainerAnd {          
+        display: flex;
+    }
+    
+    .footer-contact-and {
+      display: flex;
+      flex-direction: column;
+    }
+        
+    .footer-social-and.emailhelp-and{
+      display: none;
+    }
+    
+    
+    .newsletter-title-and {
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+    
+    
+    .footer-contact-and {          
+    margin-bottom: 0;
+    border: none;
+   }
+    
+    
+    
+    .unfold-menu-and:after {
+    content: '+';
+    float: right;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: -2px;
+    margin-right: 8px;
+    -webkit-transition: -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
+  }
+    .unfold-menu-and:after:hover {
+      transform: rotate(45deg);
+    }
+    
+   .unfold-menu-and {
+     border-bottom: 1px solid #616466;
+     line-height: 7vh;
+   }
+    
+   .xmt-30.firstmenu {
+    padding-left: 15px;
+  }
+    
+    
+    .footerMenu-and {
+      display: none;
+    }
+    
+    
+    .xmt-30.mobilemenu-margin-and {
+     
+     margin-top: 0;
+    }
+    
+    
+    .footerContainerAnd>div {
+    width: 100%;
+    max-width: 700px;
+}
+    
+    .newsletter-and {
+    padding-right: 15px;
+  }
+    
+    .footer-about-and {
+      display: none;
+    }
+    
+    
+  
+  
+  .newsletter-about-and {
+     margin-bottom: 3%;
+    }
+    
+    
+  .footer-bottom-and {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+    padding-left: 15px;
+   }
+    
+ 
+    
+  .legal-links-and li {
+    text-align: left;
+    width: 100%;
+    max-width: 95px;
+    display: inline-block;
+  }
+    
+   .legal-links-and li:first-child {
+    margin-right: 20px;
+  }
+    
+    
+
+    
+  }
+

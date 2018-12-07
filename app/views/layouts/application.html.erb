@@ -23,6 +23,18 @@
     <div class="container-fluid">
       <%= yield %>
     </div>
+
+    <%= javascript_pack_tag 'application' %>
+     <p><%= javascript_pack_tag 'hello_react' %></p>
+     <p id="app"></p>
+     <p><%= javascript_pack_tag 'index' %></p>
+
+     <%= render "layouts/footbar" %>
+     <div id="language-min">
+        Language:
+        <%= link_to_unless_current "English", locale: "en" %>
+        <%= link_to_unless_current "Chinese", locale: "zh-CN" %>
+     </div>
   </body>
 </html>
 

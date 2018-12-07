@@ -1,0 +1,238 @@
+
+<script>
+  
+  $(document).ready(function () {
+    $(window).on("resize", function (e) {
+        checkScreenSize();
+    });
+
+    checkScreenSize();
+
+    function checkScreenSize(){
+        var newWindowWidth = $(window).width();
+        if (newWindowWidth < 767) {
+          
+            
+           $(".show-toggle-and").click(function(){
+            $(".hide-toggle-and").toggle();
+           });
+          
+           $(".show4-toggle-and").click(function(){
+            $(".hide4-toggle-and").toggle();
+           });
+          
+          
+          
+          $(".show1-toggle-and").click(function(){
+            $(".hide1-toggle-and").toggle();
+           });
+          
+          
+           $(".show2-toggle-and").click(function(){
+            $(".hide2-toggle-and").toggle();
+            });
+          
+           $(".show3-toggle-and").click(function(){
+            $(".hide3-toggle-and").toggle();
+            });
+          
+          
+          }
+      
+        
+    }
+});
+  
+</script>
+
+
+
+
+
+<div class='footer-am' id='footer-and'>
+  
+  <div class="fixedwidthcontainer-am">
+    
+      <div class="footer-contact-and">
+        
+           <div class='footer-social-and emailhelp-and col-md-3  col-sm-6 smb-30 xmt-30'>
+                 
+                <h2 class="newsletter-title-and mb-30-and">Let Us Help</h2>
+               
+                <div >
+                  <a href=".com" class="email-us-container-and social-icon-footer-and">
+                    
+                    <i class="far fa-envelope fa-2x " aria-hidden="true"></i>
+                    <div>
+                        <span class="footer-title">Email</span>
+                        <span class="footer-secondary-title">Response In 24 Hrs</span>
+                    </div>
+                  </a>
+                </div>
+
+           </div>
+
+        
+            <!-- Start Single Footer Widget -->
+                <div class="col-md-9 col-lg-5 col-sm-12 smb-30 xmt-30 newsletter-and">
+                  <div class="ft__widget">
+                    <h2 class="newsletter-title-and mb-30-and">订阅我们</h2>
+                    <div class="newsletter__form">
+                      <div class="input__box">
+                        <div id="mc_embed_signup">
+                          <form action="{{ settings.newsletter_action }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll" class="htc__news__inner">
+                              <div class="news__input">
+                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="你的邮箱" required>
+                              </div>
+                              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" tabindex="-1" value=""></div>
+                              <div class="clearfix subscribe__btn"><input type="submit" value="{{ settings.button_name }}" name="subscribe" id="mc-embedded-subscribe" class="bst__btn btn--white__color">
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>        
+                    </div>
+                  </div>
+                </div>
+          <!-- End Single Footer Widget -->
+        
+               <div class='footer-social-and col-md-3  col-sm-6 smb-30 xmt-30'>
+                 
+                <h2 class="newsletter-title-and mb-30-and">Connect with us</h2>
+                <ul> 
+                       <li><a href="https://www.facebook.com/getOGadget" target="_blank" class="social-icon-footer-and"><i class="fab fa-facebook-f fa-2x" aria-hidden="true"></i>
+                         </a></li>
+                       <li><a href="https://twitter.com/ogadget3" target="_blank" class="social-icon-footer-and"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i>
+                         </a></li>
+                       <li><a href="https://www.youtube.com/channel/UCj0Fc65hbe7fOPgLJchh9fg" target="_blank" class="social-icon-footer-and"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i>
+                         </a></li>
+                       <li><a href="https://www.i.club" target="_blank" class="social-icon-footer-and"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+                         </a></li>
+
+                </ul>
+
+              </div>
+              
+      </div>
+    
+
+      <div class='footerContainerAnd'>
+
+
+              <div class="col-md-3 col-lg-3 col-sm-6 smb-30 xmt-30 firstmenu mobilemenu-margin-and">
+                <p class='menu-title-and unfold-menu-and show-toggle-and'><a>Shop</a></p>
+                   <ul class='footerMenu-and hide-toggle-and'>
+                     <li><a href=".com/collections/popular-products">Popular Kickstarter Products</a></li>
+                     <li><a href=".com/collections Staff Pick</a></li>
+                     <li><a href=".com/collections/pre-order">Pre-Order</a></li>
+                    </ul>
+              </div>
+        
+        
+               <div class="col-md-3 col-lg-3 col-sm-6 smb-30 xmt-30 firstmenu mobilemenu-margin-and">
+                <p class='menu-title-and unfold-menu-and show4-toggle-and'><a>About US</a></p>
+                   <ul class='footerMenu-and hide4-toggle-and'>
+                     <li><a href=.com/#AboutUs">Our Story</a></li>
+                     <li><a href=".com/collections/popular-products">Press & Media</a></li>
+                     <li><a href=".com" target="_blank">Contact us</a></li>
+                    </ul>
+                </div>
+        
+        
+        
+               <div class="col-md-3 col-lg-3 col-sm-6 smb-30 xmt-30 mobilemenu-margin-and">
+                 <p class='menu-title-and unfold-menu-and show1-toggle-and'><a>Support</a></p>
+                   <ul class='footerMenu-and hide1-toggle-and'> 
+                     <li><a href=".com/account/login" target="_blank">My account</a></li>
+                     <li><a href=.com/faq" target="_blank">FAQ</a></li>
+                     <li><a href=.com/faq#return" target="_blank">Return & Refund</a></li>
+                   
+                   </ul>
+              </div>
+                <div class="col-md-3 col-lg-3 col-sm-6 smb-30 xmt-30 mobilemenu-margin-and">
+                  <p class='menu-title-and unfold-menu-and show2-toggle-and'><a>Community</a></p>
+                   <ul class='footerMenu-and hide2-toggle-and'> 
+                     <li><a href=.com/community/influencer-program">Influencer program</a></li>
+                     <li><a href=.com/community/videos">Videos</a></li>
+                    
+                   </ul>
+              </div>
+        
+                <div class="col-md-3 col-lg-3 col-sm-6 smb-30 xmt-30 mobilemenu-margin-and">
+                  <p class='menu-title-and unfold-menu-and show3-toggle-and'><a>partners</a></p>
+                   <ul class='footerMenu-and hide3-toggle-and'> 
+                     <li><a href=".com/pages/become-a-reseller">Become a Reseller</a></li>
+                     <li><a href="#">affliate program</a></li>
+                   </ul>
+              </div>
+
+
+      </div>
+  
+  
+  
+    
+    
+      <div class="footer-bottom-and">
+        
+        <div class="footer-copyright-and"> © summercloud 2018</div>
+          
+        
+          <ul class="legal-links-and">
+            <li><a href=.com/support/privacy-policy" target="_blank" >Privacy Policy</a></li>
+            <li><a href=.com/support/terms-of-use" target="_blank">Terms of Use</a></li>
+          </ul>
+      </div>
+          
+       
+     
+    
+  </div> <!-- end fixed width 1200px container -->
+</div>
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+      
+  
+    
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+
+          
+            
+            
+
+ 
+
+

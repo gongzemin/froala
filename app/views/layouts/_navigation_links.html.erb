@@ -1,0 +1,10 @@
+<%# add navigation links to this file %>
+<li><%= link_to t(:users), users_path %></li>
+
+<%= content_tag :li do %>
+    <%= link_to 'Switch to Chinese', locale: :zh-CN %>
+<% end unless current_page?(locale: :zh-CN) %>
+
+<%= content_tag :li do %>
+    <%= link_to 'Switch to English', locale: :en %>
+<% end unless current_page?(locale: :en) %>

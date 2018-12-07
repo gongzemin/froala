@@ -1,4 +1,11 @@
 Rails.application.configure do
+
+  # Add Rack::LiveReload to the bottom of the middleware stack with the default options:
+  config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload
+
+
+  # Verifies that versions and hashed value of the package contents in the project's package.json
+  config.webpacker.check_yarn_integrity = true
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on
@@ -63,6 +70,9 @@ Rails.application.configure do
   # Add by Gzmin 20181122
   # Use for devise
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+ 
+
 
   
 end
