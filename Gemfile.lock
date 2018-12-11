@@ -103,6 +103,8 @@ GEM
     font-awesome-sass (5.5.0.1)
       sassc (>= 1.11)
     formatador (0.2.5)
+    friendly_id (5.2.4)
+      activerecord (>= 4.0.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     gravatar_image_tag (1.2.0)
@@ -294,6 +296,7 @@ DEPENDENCIES
   devise
   devise-i18n
   font-awesome-sass
+  friendly_id
   gravatar_image_tag
   guard
   guard-livereload (~> 2.5)
