@@ -3,16 +3,17 @@
 Not a complete project yet. Just accomplish a few features.
 
 Features:
-Upload a project,
-Upload image with active storage,
-Account system with devise,
-En/zh language version,
-Ability show to number of projects have created,
-Ability to comment projects
+- Upload a project,
+- Upload image with active storage,
+- Account system with devise,
+- En/zh language version,
+- Ability show to number of projects have created,
+- Ability to comment projects
 
 
 gem used list:
 
+```ruby
 gem 'bootstrap'
 gem 'jquery-rails'
 gem 'wysiwyg-rails'
@@ -26,3 +27,4 @@ gem 'gravatar_image_tag'
 gem 'webpacker', '~> 3.5'
 gem 'devise-i18n'
 gem 'friendly_id'
+```
