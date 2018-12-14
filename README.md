@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Not a complete project yet. Just accomplish a few features.
 
-Things you may want to cover:
+Features:
+Upload a project,
+Upload image with active storage,
+Account system with devise,
+En/zh language version,
+Ability show to number of projects have created,
+Ability to comment projects
 
-* Ruby version
 
-* System dependencies
+gem used list:
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+gem 'bootstrap'
+gem 'jquery-rails'
+gem 'wysiwyg-rails'
+gem "font-awesome-sass"
+gem 'high_voltage', '~> 3.1'
+gem 'stripe'
+gem 'devise'
+gem 'simple_form'
+gem 'omniauth'
+gem 'gravatar_image_tag'
+gem 'webpacker', '~> 3.5'
+gem 'devise-i18n'
+gem 'friendly_id'
