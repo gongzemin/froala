@@ -3,7 +3,7 @@
 Not a complete project yet. Just accomplish a few features.
 
 Features:
-- Upload a project,
+- Upload a project with WYSIWYG editor,
 - Upload image with active storage,
 - Account system with devise,
 - En/zh language version,
