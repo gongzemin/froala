@@ -7,7 +7,7 @@ Features:
 - Upload image with active storage,
 - Account system with devise,
 - En/zh language version,
-- Ability show to number of projects have created,
+- Ability to show the number of created projects per creator
 - Ability to comment projects
 
 
