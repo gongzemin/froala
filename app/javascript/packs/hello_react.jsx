@@ -5,6 +5,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
+import Footer from '../components/Footer'
 
 const Hello = props => (
   <div>你听那是谁在唱那首你最爱的歌谣啊 {props.name}!</div>
@@ -20,7 +21,7 @@ Hello.propTypes = {
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
-    <Hello name="React" />,
+    <Footer />,
     document.getElementById('app')
   )
 })

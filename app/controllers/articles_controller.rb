@@ -39,7 +39,6 @@ class ArticlesController < ApplicationController
 	end
 
 	def show
-	   
 	end
 
 	def destroy
@@ -58,7 +57,7 @@ class ArticlesController < ApplicationController
 	end
 
 	def set_article
-		@article = Article.find(params[:id])
+		@article = Article.friendly.find(params[:id])
 	end
 end
 
