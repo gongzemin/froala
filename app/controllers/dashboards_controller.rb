@@ -1,6 +1,6 @@
 class DashboardsController < ApplicationController
   def show
-  	@dashboard = Dashboard.new(articles: featured_articles)
+  	#@dashboard = Dashboard.new(articles: featured_articles)
   end
 
   private 

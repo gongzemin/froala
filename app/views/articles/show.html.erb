@@ -18,6 +18,8 @@
     <% if @article.project_cover.attached? %>
 	<div class="pb-50-min"><%= image_tag @article.project_cover.variant(resize: '756X425.25') %></div>
     <% end %>
+
+    <p><b>Category:</b><%= @article.category && @article.category.name %></p>
   </div>
 
 

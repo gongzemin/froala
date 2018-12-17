@@ -10,4 +10,7 @@ class Article < ApplicationRecord
 	has_one_attached :project_cover
 
 	validates :title, presence: true, length: { maximum: 110 }
+
+    # Additionally can declare the category association as optional:
+	belongs_to :category, optional: true
 end

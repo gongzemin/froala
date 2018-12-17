@@ -21,9 +21,6 @@ const Footer = props => (
                 <a href="#!">我们希望成为什么</a>
               </li>
               <li>
-                <a href="#!">Link 3</a>
-              </li>
-              <li>
                 <a href="#!">加入我们</a>
               </li>
             </ul>
