@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const Footer = props => (
-  <footer className="page-footer font-small blue pt-4">
+  <footer className="page-footer font-small blue pt-4 container">
     <div className="container-fluid text-center text-md-left">
 
       <div className="row">
@@ -11,19 +11,19 @@ const Footer = props => (
 
         <div className="col-md-2 mb-md-0 mb-3">
             
-            <h5 className="text-uppercase">关于夏云</h5>
+            <h5 className="text-uppercase mb-30-min">关于夏云</h5>
 
             <ul className="list-unstyled">
-              <li>
+              <li className="pb-10-min">
                 <a href="#!">愿景</a>
               </li>
-              <li>
+              <li className="pb-10-min">
                 <a href="#!">Why we</a>
               </li>
-              <li>
+              <li className="pb-10-min">
                 <a href="#!">文化和多样性</a>
               </li>
-              <li>
+              <li className="pb-10-min">
                 <a href="#!">工作机会</a>
               </li>
             </ul>
@@ -33,19 +33,19 @@ const Footer = props => (
           <div className="col-md-2 mb-md-0 mb-3">
 
 
-            <h5 className="text-uppercase">创客吧</h5>
+            <h5 className="text-uppercase mb-30-min">创客吧</h5>
 
             <ul className="list-unstyled">
-              <li>
+              <li className="pb-10-min">
                 <a href="#!">怎么发起项目</a>
               </li>
-              <li>
+              <li className="pb-10-min">
                 <a href="#!">项目推广</a>
               </li>
-              <li>
+              <li className="pb-10-min">
                 <a href="#!">项目审核</a>
               </li>
-              <li>
+              <li className="pb-10-min">
                 <a href="#!">平台规则</a>
               </li>
             </ul>
@@ -54,16 +54,16 @@ const Footer = props => (
 
           <div className="col-md-2 mb-md-0 mb-3">
 
-            <h5 className="text-uppercase">资源</h5>
+            <h5 className="text-uppercase mb-30-min">资源</h5>
 
             <ul className="list-unstyled">
-              <li>
+              <li className="pb-10-min">
                 <a href="#!">博客</a>
               </li>
-              <li>
+              <li className="pb-10-min">
                 <a href="#!">技术博客</a>
               </li>
-              <li>
+              <li className="pb-10-min">
                 <a href="#!">媒体联系</a>
               </li>
             </ul>
@@ -72,20 +72,20 @@ const Footer = props => (
 
           <div className="col-md-2 mb-md-0 mb-3">
 
-            <h5 className="text-uppercase">Links</h5>
+            <h5 className="text-uppercase mb-30-min">比较</h5>
 
             <ul className="list-unstyled">
-              <li>
-                <a href="#!">Link 1</a>
+              <li className="pb-10-min">
+                <a href="#!">淘宝众筹</a>
               </li>
-              <li>
-                <a href="#!">Link 2</a>
+              <li className="pb-10-min">
+                <a href="#!">京东众筹</a>
               </li>
-              <li>
-                <a href="#!">Link 3</a>
+              <li className="pb-10-min">
+                <a href="#!">摩点网</a>
               </li>
-              <li>
-                <a href="#!">Link 4</a>
+              <li className="pb-10-min">
+                <a href="#!">夏云</a>
               </li>
             </ul>
 

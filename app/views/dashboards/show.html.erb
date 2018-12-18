@@ -4,7 +4,7 @@
 
 
 
-      <h5>发现项目</h5>
+      <h5 class="mb-20-min">发现项目</h5>
 
    
 	  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -27,11 +27,10 @@
 					  	   <%= image_tag article.project_cover.variant(resize: '218x122.63') %>
 					  	  <% end %>
 					  	  <div class="project-card-content">
-					  		<h6><%= article.title %></h6>
-					  		<p class="project-blurb"><%= article.subtitle %></p>
-					  		<p class="project-blurb"><%= article.category.name %></p>
-					  		<p><%= link_to "READ MORE", article_path(article) %></p>
-					  	  </div>	  
+					  		<h6><%= link_to article.title, article_path(article), class: 'text-teal' %></h6>
+					  		<p class="project-blurb"><%= truncate(article.subtitle.html_safe, length:160) %></p>
+					  		<p class="project-blurb">category: <%= article.category.name %></p>
+					  	  </div> 
 			        </div>
 			     <% end %>
 			</div>

@@ -2,3 +2,12 @@
 	padding-left: 0px !important;
 	padding-right: 0px !important;
 }
+
+a {
+	color: #212529 !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff !important;
+    background-color: teal;
+}

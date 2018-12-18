@@ -63,7 +63,7 @@
 
 
 .text-teal {
-	color: teal;
+	color: teal !important;
 }
 
 
@@ -71,6 +71,7 @@
 .btn-teal {
 	background-color: teal;
 	border: none;
+	color: #fff !important;
 }
 
 .overflow-hidden-min {
@@ -102,18 +103,20 @@
 	margin-top: 10px;
 }
 
+.mb-10-min {
+	margin-bottom: 10px;
+}
 
 .mb-20-min {
 	margin-bottom: 20px;
 }
 
-
-
-/*
 .mb-30-min {
 	margin-bottom: 30px;
 }
-*/
+
+
+
 .mb-50-min {
 	margin-bottom: 50px;
 }
@@ -137,6 +140,10 @@
 */
 .pt-60-min {
 	padding-top: 60px;
+}
+
+.pb-10-min {
+	padding-bottom: 10px;
 }
 
 .pb-50-min {
