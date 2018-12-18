@@ -4,7 +4,7 @@ class CommentsController < ApplicationController
 	before_action :authenticate_user!, only: [:create, :destroy]
 
 	  def create
-	  	@article = Article.find(params[:article_id])
+	  	@article = Article.friendly.find(params[:article_id])
 	  	@comment = @article.comments.create(comment_params)
 	  	@comment.user_id = current_user.id if current_user
 	  
