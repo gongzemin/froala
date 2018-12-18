@@ -18,10 +18,13 @@ const Footer = props => (
                 <a href="#!">愿景</a>
               </li>
               <li>
-                <a href="#!">我们希望成为什么</a>
+                <a href="#!">Why we</a>
               </li>
               <li>
-                <a href="#!">加入我们</a>
+                <a href="#!">文化和多样性</a>
+              </li>
+              <li>
+                <a href="#!">工作机会</a>
               </li>
             </ul>
 

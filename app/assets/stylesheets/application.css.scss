@@ -13,9 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "override";
  @import "bootstrap";
  @import "articles";
-  @import "footbar";
+ @import "footbar";
+ @import "category";
  
  @import "froala_editor.min";
  @import "froala_style.min";
@@ -55,6 +58,18 @@
 	max-width: 1366px;
 	width: 100%;
 }
+
+
+
+
+.text-teal {
+	color: teal;
+}
+
+
+
+
+
 
 .type-12-min {
 	font-size: 12px;
