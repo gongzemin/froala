@@ -14,12 +14,42 @@
 	</div>
 
 	
-	
-    <% if @article.project_cover.attached? %>
-	<div class="pb-50-min"><%= image_tag @article.project_cover.variant(resize: '756X425.25') %></div>
-    <% end %>
+	<div class="row">
+	  <div class="col-lg-8">
+	    <% if @article.project_cover.attached? %>
+		<div class="pb-50-min overflow-hidden-min"><%= image_tag @article.project_cover.variant(resize: '756X425.25') %></div>
+	    <% end %>
 
-    <p><b>Category:</b><%= @article.category && @article.category.name %></p>
+	    <p><b>Category:</b><%= @article.category && @article.category.name %></p>
+	  </div>
+
+	  <div class="col-md-4">
+	  	<div class="flex mb-15-min">
+	  		<div><span class="text-teal type-24-min">XXX<span></div>
+	  		<span class="dark-grey-500 type-12-min">筹集目标 <%= @article.goal %>元</span>
+	  	</div>
+
+	  	<div class="flex mb-15-min">
+	  		<div><span class="text-teal type-24-min">XXX<span></div>
+	  		<span class="dark-grey-500 type-12-min">支持者<%#= @article.goal %></span>
+	  	</div>
+
+	  	<div class="flex mb-15-min">
+	  		<div><span class="text-teal type-24-min">XXX<span></div>
+	  		<span class="dark-grey-500 type-12-min">剩余天数<%#= @article.goal %></span>
+	  	</div>
+
+	  	<div class="flex mb-15-min">
+           <a class="btn btn-primary btn-teal btn-block" href="#" role="button">支持</a>
+        </div>
+
+        <div class="flex mb-15-min">
+	  		<div class="dark-grey-500 type-12-min">全有或全无。 该项目只有在<span>xxxx年12月31日星期一晚上8点51分</span>到达目标时才会获得资助。</div>
+	  	</div>
+        
+       
+
+	  	
   </div>
 
 
