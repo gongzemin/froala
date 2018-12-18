@@ -21,11 +21,13 @@
 
         <%= f.input :password,
                     hint: t(".leave_blank_if_you_don_t_want_to_change_it"),
-                    required: false
+                    required: false,
                     input_html: { autocomplete: "new-password" } %>
+
         <%= f.input :password_confirmation,
                     required: false,
                     input_html: { autocomplete: "new-password" } %>
+
         <%= f.input :current_password,
                     hint: t(".we_need_your_current_password_to_confirm_your_changes"),
                     required: true,

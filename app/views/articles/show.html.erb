@@ -2,9 +2,14 @@
   <div class="bg-grey-100-min grid-container-min mb-50-min">
 	<div class="row pt-60-min  mb-50-min">
 	    <div class="col-md-3">
-
+         
 	    	<div><%= image_tag user_avatar(@article.user, 38), class: 'rounded-circle' %></div>
-	    	<div class="mt-10-min">By <%= link_to @article.user.username %></div>
+
+	    	<% if @article.user.username? %>
+	    	  <div class="mt-10-min">By <%= link_to @article.user.username %></div>
+	    	<% else %>
+	    	  <div class="mt-10-min">By <%= link_to @article.user.email.split('@')[0].capitalize %></div>
+	    	<% end %>
 	    	<p class="font-size-13-min">发起了 <%= pluralize(@article.user.articles.count, 'project') %></p>
 	    </div>
 	    <div class="col-md-9 width-600-min">
@@ -17,25 +22,25 @@
 	<div class="row">
 	  <div class="col-lg-8">
 	    <% if @article.project_cover.attached? %>
-		<div class="pb-50-min overflow-hidden-min"><%= image_tag @article.project_cover.variant(resize: '756X425.25') %></div>
+		<div class="mb-20-min overflow-hidden-min"><%= image_tag @article.project_cover.variant(resize: '756X425.25') %></div>
 	    <% end %>
 
-	    <p><b>Category:</b><%= @article.category && @article.category.name %></p>
+	    <p class="pb-50-min"><b>Category:</b><%= @article.category && @article.category.name %></p>
 	  </div>
 
 	  <div class="col-md-4">
 	  	<div class="flex mb-15-min">
-	  		<div><span class="text-teal type-24-min">XXX<span></div>
+	  		<div><span class="text-teal type-24-min">XXX</span></div>
 	  		<span class="dark-grey-500 type-12-min">筹集目标 <%= @article.goal %>元</span>
 	  	</div>
 
 	  	<div class="flex mb-15-min">
-	  		<div><span class="text-teal type-24-min">XXX<span></div>
+	  		<div><span class="text-teal type-24-min">XXX</span></div>
 	  		<span class="dark-grey-500 type-12-min">支持者<%#= @article.goal %></span>
 	  	</div>
 
 	  	<div class="flex mb-15-min">
-	  		<div><span class="text-teal type-24-min">XXX<span></div>
+	  		<div><span class="text-teal type-24-min">XXX</span></div>
 	  		<span class="dark-grey-500 type-12-min">剩余天数<%#= @article.goal %></span>
 	  	</div>
 
@@ -46,6 +51,9 @@
         <div class="flex mb-15-min">
 	  		<div class="dark-grey-500 type-12-min">全有或全无。 该项目只有在<span>xxxx年12月31日星期一晚上8点51分</span>到达目标时才会获得资助。</div>
 	  	</div>
+	 </div>
+
+    </div>
         
        
 
