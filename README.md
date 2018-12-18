@@ -1,6 +1,8 @@
 # README
 
 Not a complete project yet. Just accomplish a few features.
+live demo
+https://froala.herokuapp.com
 
 Features:
 - Upload a project with WYSIWYG editor,
@@ -27,4 +29,5 @@ gem 'gravatar_image_tag'
 gem 'webpacker', '~> 3.5'
 gem 'devise-i18n'
 gem 'friendly_id'
+gem "aws-sdk-s3", require: false
 ```
