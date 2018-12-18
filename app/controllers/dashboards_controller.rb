@@ -1,6 +1,6 @@
 class DashboardsController < ApplicationController
   def show
-  	@category = Category.all
+  	@categories = Category.all
     @articles = Article.where(category_id: params[:category_id]) if params[:category_id].present?
   end
 

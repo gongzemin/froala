@@ -8,7 +8,7 @@
 
    
 	  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-       <% @category.each_with_index do |category, index| %>
+       <% @categories.each_with_index do |category, index| %>
         <li class="nav-item" style="margin-right: 20px">
 
           <a class="nav-link text-teal category-min <%= 'active' if index == 0%>"  data-toggle="pill" href="#cat-<%= category.id %>" role="tab"  aria-selected="true"><%= category.name %></a>
@@ -17,7 +17,7 @@
       </ul>
 
       <div class="tab-content" id="pills-tabContent">
-        <% @category.each_with_index do |category, index| %>
+        <% @categories.each_with_index do |category, index| %>
 		  
 	      <div class="tab-pane fade show <%= 'active' if index == 0%>" id="cat-<%= category.id %>" role="tabpanel" >
 	        <div class="row">
