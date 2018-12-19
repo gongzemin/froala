@@ -12,6 +12,15 @@ class Article < ApplicationRecord
 	# belongs_to :category, optional: true
 	belongs_to :category 
 
+	searchkick text_start: [:title]
+
+	def search_data 
+		{
+			title: title,
+			subtitle: subtitle
+		}
+	end
+
 	validates :title, presence: true, length: { maximum: 110 }
 	validates :subtitle, presence: true, length: { maximum: 210 }
 	validates :goal, presence: true

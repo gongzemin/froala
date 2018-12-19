@@ -4,9 +4,13 @@ class ArticlesController < ApplicationController
 	before_action :authenticate_user!, except: [:index, :show]
 	# before_action :require_login, except: [:index, :show]
 
+
+
 	def index 
-		@user = current_user
-		@articles = @user.articles.all.order('created_at DESC')
+		#@user = current_user
+		#@articles = @user.articles.all.order('created_at DESC')
+		query = params[:q].presence || "*"
+        @articles = Article.search(query)
 	end
 
 	def new 

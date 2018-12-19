@@ -39,7 +39,6 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Add by Gzmin
 
 gem 'bootstrap'
-gem 'jquery-rails'
 gem 'wysiwyg-rails'
 gem "font-awesome-sass"
 gem 'high_voltage', '~> 3.1'
@@ -52,6 +51,9 @@ gem 'webpacker', '~> 3.5'
 gem 'devise-i18n'
 gem 'friendly_id'
 gem "aws-sdk-s3", require: false
+gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+gem 'jquery-ui-rails', '~> 6.0.0'
+gem 'searchkick',  '>= 3.1.2'
 
 
 
