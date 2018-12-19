@@ -54,6 +54,10 @@ class ArticlesController < ApplicationController
 		end
 	end
 
+	def autocomplete
+       render json: Article.search(params[:term], fields: [{title: :text_start}], limit: 10).map(&:title)
+    end
+
 	private
 
 	def article_params
